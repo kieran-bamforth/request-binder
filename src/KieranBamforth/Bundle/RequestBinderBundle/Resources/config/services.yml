@@ -1,0 +1,17 @@
+services:
+
+    # Form Error Handler.
+
+    kb_request_binder.form_error_handler:
+        class: KieranBamforth\Bundle\RequestBinderBundle\DependencyInjection\FormErrorHandler\FormErrorHandler
+
+    # Request binder.
+
+    kb_request_binder.request_binder:
+        class: KieranBamforth\Bundle\RequestBinderBundle\DependencyInjection\RequestBinder\RequestBinder
+        arguments:
+            - @form.factory
+            - @kb_request_binder.form_error_handler
+            - @doctrine.orm.entity_manager
+
+

@@ -1,0 +1,22 @@
+{
+    "name": "kieranbamforth/request-binder",
+    "type": "library",
+    "description": "Binds JSON requests to API actions.",
+    "authors": [
+        {
+            "name": "Kieran Bamforth",
+            "email": "hello@kieranbamforth.me"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+        "symfony/http-kernel": "~2.6",
+        "mockery/mockery": "~0.9",
+        "phpunit/phpunit": "~4.4"
+    },
+    "autoload": {
+        "psr-0": { "": "src" }
+    },
+    "minimum-stability": "dev"
+}
